@@ -169,7 +169,7 @@ namespace Simland
             }
         }
 
-        private void ClearScreen()
+        public void ClearScreen()
         {
             Cursor = new Point(0, 0);
 
@@ -192,7 +192,7 @@ namespace Simland
         public string ReadLine()
         {
             StringBuilder sb = new StringBuilder();
-            for ( int index = 0; index < Cursor.X; index++)
+            for (int index = 0; index < Cursor.X; index++)
             {
                 sb.Append((char)grid[index, Cursor.Y]);
             }
